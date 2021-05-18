@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Olga Buianova](https://up.htmlacademy.ru/htmlcss/31/user/1584633).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Савотников] (https://htmlacademy.ru/profile/id98316)
 
 ---
 
