@@ -24,35 +24,49 @@
   <main>
     <h1>Каталог</h1>
 
-    <form action="https://echo.htmlacademy.ru/" method="post"></form>
-    <fieldset>
-      <legend>Инфраструктура:</legend>
-      <ul>
-        <li><input type="checkbox" name="Pool">Бассейн</li>
-        <li><input type="checkbox" name="Parking">Парковка</li>
-        <li><input type="checkbox" name="Wi-fi">Wi-Fi</li>
-      </ul>
-    </fieldset>
-    <fieldset>
-      <legend>Тип жилья:</legend>
-      <ul>
-        <li><input type="checkbox" name="Hotel">Гостиница</li>
-        <li><input type="checkbox" name="Motel">Мотель</li>
-        <li><input type="checkbox" name="Apart">Апартаменты</li>
-      </ul>
-    </fieldset>
-    <fieldset>
-      <legend>Стоимость в сутки, ₽:</legend>
-      <label></label>
-      <p>
-        <input type="text" name="price" placeholder="От 0">
-        <input type="text" name="price" placeholder="До 3000">
-      </p>
-      <p>
-        <input type="range" name="slider">
-      </p>
-      <button type="submit">Показать</button>
-    </fieldset>
+    <form action="https://echo.htmlacademy.ru/" method="post">
+      <fieldset>
+        <legend>Инфраструктура:</legend>
+        <p>
+          <input id="pool" type="checkbox" name="pool">
+          <label for="pool">Бассейн</label>
+        </p>
+        <p>
+          <input id="parking" type="checkbox" name="parking">
+          <label for="parking">Парковка</label>
+        </p>
+        <p>
+          <input id="wi-fi" type="checkbox" name="wi-fi">
+          <label for="wi-fi">Wi-Fi</label>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Тип жилья:</legend>
+        <p>
+          <input id="hotel" type="checkbox" name="hotel">
+          <label for="hotel">Гостиница</label>
+        </p>
+        <p>
+          <input id="motel" type="checkbox" name="motel">
+          <label for="motel">Мотель</label>
+        </p>
+        <p>
+          <input id="apart" type="checkbox" name="apart">
+          <label for="apart">Апартаменты</label>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Стоимость в сутки, ₽:</legend>
+        <label></label>
+        <p>
+          <input type="text" name="price" placeholder="От 0">
+          <input type="text" name="price" placeholder="До 3000">
+        </p>
+        <p>
+          <input type="range" name="slider">
+        </p>
+        <button type="submit">Показать</button>
+      </fieldset>
     </form>
 
     <section>
@@ -62,6 +76,8 @@
         <li><a href="#">По цене</a></li>
         <li><a href="#">По типу</a></li>
         <li><a href="#">По рейтингу</a></li>
+      </ul>
+      <ul>
         <li><a href="#">По убыванию</a></li>
         <li><a href="#">По возрастанию</a></li>
       </ul>
