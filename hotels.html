@@ -16,82 +16,85 @@
         <li><a href="blank.html">Информация</a></li>
         <li><a href="blank.html">Фото и видео</a></li>
         <li><a href="blank.html">Карта штата</a></li>
-        <li><a href="blank.html">Гостиницы</a></li>
+        <li><a>Гостиницы</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <h1>Каталог</h1>
-    <section>
-      <p>Инфраструктура:</p>
+
+    <form action="https://echo.htmlacademy.ru/" method="post"></form>
+    <fieldset>
+      <legend>Инфраструктура:</legend>
       <ul>
-        <li>Бассейн</li>
-        <li>Парковка</li>
-        <li>Wi-Fi</li>
+        <li><input type="checkbox" name="Pool">Бассейн</li>
+        <li><input type="checkbox" name="Parking">Парковка</li>
+        <li><input type="checkbox" name="Wi-fi">Wi-Fi</li>
       </ul>
-      <p>Тип жилья:</p>
+    </fieldset>
+    <fieldset>
+      <legend>Тип жилья:</legend>
       <ul>
-        <li>Гостиница</li>
-        <li>Мотель</li>
-        <li>Апартаменты</li>
+        <li><input type="checkbox" name="Hotel">Гостиница</li>
+        <li><input type="checkbox" name="Motel">Мотель</li>
+        <li><input type="checkbox" name="Apart">Апартаменты</li>
       </ul>
-      <form action="https://echo.htmlacademy.ru/" method="post">
-        <label>Стоимость в сутки, ₽:</label>
-        <p>
-          <input type="text" name="price" placeholder="От 0">
-          <input type="text" name="price" placeholder="До 3000">
-        </p>
-        <p>
-          <input type="range" name="slider">
-        </p>
-        <button type="submit">Показать</button>
-      </form>
-    </section>
+    </fieldset>
+    <fieldset>
+      <legend>Стоимость в сутки, ₽:</legend>
+      <label></label>
+      <p>
+        <input type="text" name="price" placeholder="От 0">
+        <input type="text" name="price" placeholder="До 3000">
+      </p>
+      <p>
+        <input type="range" name="slider">
+      </p>
+      <button type="submit">Показать</button>
+    </fieldset>
+    </form>
+
     <section>
       <p>Найдено: 3</p>
       <p>Сортировка</p>
-      <button type="submit">По цене</button>
-      <button type="submit">По типу</button>
-      <button type="submit">По рейтингу</button>
-      <a href="#">Стрелочка вниз</a>
-      <a href="#">Стрелочка вверх</a>
+      <ul>
+        <li><a href="#">По цене</a></li>
+        <li><a href="#">По типу</a></li>
+        <li><a href="#">По рейтингу</a></li>
+        <li><a href="#">По убыванию</a></li>
+        <li><a href="#">По возрастанию</a></li>
+      </ul>
     </section>
     <section>
-      <p>
-        <img src="https://via.placeholder.com/150x100" alt="Amara Resort&Spa">
-      </p>
+      <img src="https://via.placeholder.com/150x100" alt="Amara Resort&Spa">
       <h2>Amara Resort & Spa</h2>
       <p>Гостиница</p>
       <p>От 4000 ₽</p>
       <a href="blank.html">Подробнее</a>
       <a href="blank.html">Забронировать</a>
-      <p>4 Stars</p>
-      <a href="blank.html">Рейтинг: 8,5</a>
+      <div>4 Звезды</div>
+      <p>Рейтинг: 8,5</p>
     </section>
     <section>
-      <p>
-        <img src="https://via.placeholder.com/150x100" alt="Desert Quail Inn">
-      </p>
+      <img src="https://via.placeholder.com/150x100" alt="Desert Quail Inn">
       <h2>Desert Quail Inn</h2>
       <p>Мотель</p>
       <p>От 3000 ₽</p>
       <a href="blank.html">Подробнее</a>
       <a href="blank.html">Забронировать</a>
-      <p>3 Stars</p>
-      <a href="blank.html">Рейтинг: 8,9</a>
+      <div>3 Звезды</div>
+      <p>Рейтинг: 8,9</p>
     </section>
     <section>
-      <p>
-        <img src="https://via.placeholder.com/150x100" alt="Villas at Poco Diablo">
-      </p>
+      <img src="https://via.placeholder.com/150x100" alt="Villas at Poco Diablo">
       <h2>Villas at Poco Diablo</h2>
       <p>Апартаменты</p>
       <p>От 2000 ₽</p>
       <a href="blank.html">Подробнее</a>
       <a href="blank.html">Забронировать</a>
-      <p>2 Stars</p>
-      <a href="blank.html">Рейтинг: 9,2</a>
+      <div>2 Звезды</div>
+      <p>Рейтинг: 9,2</p>
     </section>
   </main>
 
