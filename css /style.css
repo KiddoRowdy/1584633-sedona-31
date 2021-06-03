@@ -1,0 +1,339 @@
+:root {
+  --basic-white: #FFFFFF;
+  --basic-black: #000000;
+  --basic-blue: #81B3D2;
+  --basic-brown: #766357;
+  --basic-grey: #aba9a7;
+
+  --special-brown-light: #604E43;
+  --special-brown-neutral: #503E33;
+
+  --special-blue-light: #669EC0;
+  --special-blue-neutral: #5496BD;
+
+  --special-grey: #EEEEEE;
+  --special-grey-rate: #F2F2F2;
+  --special-grey-htmlacademy: #BDBBBC;
+}
+
+/* Global */
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  color: var(--basic-black);
+  text-transform: uppercase;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Main navigation */
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+
+.main-navigation-wrapper {
+  background-color: var(--basic-white);
+
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-black);
+}
+
+.site-navigation a {
+  color: var(--basic-black);
+}
+
+.container h2 {
+  font-size: 21px;
+  line-height: 26px;
+
+}
+
+.features {
+  width: 1200px;
+  height: 509px;
+  text-align: center;
+  background-color: var(--basic-grey);
+  background-image: url(/Users/borntosleep/Documents/GitHub/1584633-sedona-31/img/backgroundimage.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+
+
+.slogan-item {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  text-align: center;
+}
+
+.main-header-logo {
+  text-align: center;
+}
+
+
+.article {
+  width: 400px;
+  height: 256px;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 21px;
+  text-align: center;
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+
+}
+
+.article-list {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+
+}
+
+.article-img {
+  background-color: var(--special-grey);
+}
+
+.about {
+  width: 400px;
+  height: 256px;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 21px;
+  text-align: center;
+  color: var(--basic-black);
+  background-color: var(--special-grey);
+
+}
+
+.book {
+  text-align: center;
+  background-color: var(--basic-white);
+  background-position: top center;
+
+}
+ /* Buttons*/
+
+.button {
+  font: inherit;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
+.button-disabled {
+  color: var(--basic-brown);
+
+}
+
+.button-form {
+  width: 137px;
+  height: 36px;
+  font-size: 14px;
+  line-height: 21px;
+  border: 2px solid #FFFFFF;
+  background-color: transparent;
+
+}
+
+.button-form:hover,
+.button-form:focus,
+.button-form:active {
+  background-color: var(--basic-white);
+}
+
+.button-more {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+
+.button-more:hover,
+.button-more:focus {
+  background-color: var(--special-blue-light);
+}
+
+.button-more:active {
+  background-color: var(--special-blue-neutral);
+}
+
+.button-search {
+  width: 568px;
+  height: 86px;
+  color: var(--basic-white);
+  background-color: var(--basic-brown);
+}
+
+.button-search:hover,
+.button-search:focus {
+  background-color: var(--special-brown-light);
+}
+
+.button-search:active {
+  background-color: var(--special-brown-neutral);
+}
+
+.button-book {
+  font-weight: normal;
+  color: var(--basic-white);
+  background-color: var(--basic-brown);
+}
+
+.button-book:hover,
+.button-book:focus {
+  background-color: var(--special-brown-light);
+}
+
+.button-book:active {
+  background-color: var(--special-brown-neutral);
+}
+
+.button-htmlacademy {
+  font-weight: normal;
+  text-align: center;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
+.button-htmlacademy:hover,
+.button-htmlacademy:focus {
+  color: var(--special-blue-light)
+}
+
+.button-htmlacademy:active {
+  color: var(--special-grey-htmlacademy);
+}
+
+/* Footer*/
+
+.main-footer {
+  font-size: 21px;
+  line-height: 26px;
+  background-image: url(/Users/borntosleep/Documents/GitHub/1584633-sedona-31/img/footer.png);
+}
+.footer-social {
+  list-style: none;
+  text-align: center;
+
+}
+
+.social-button {
+  color: var(--basic-black);
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--special-blue-light);
+
+}
+
+.footer-phone {
+  color: var(--basic-black);
+}
+
+/* Catalog */
+
+.form {
+  background-color: var(--basic-grey);
+  background-image: url(/Users/borntosleep/Documents/GitHub/1584633-sedona-31/img/catalog/backgroundcatalog.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  color: var(--basic-white);
+  font-weight: normal;
+}
+
+
+.form-item {
+  font-size: 16px;
+  line-height: 21px;
+
+}
+
+.form-content {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.cost-content input {
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+}
+
+.cost-content input:focus {
+  border-color: var(--basic-blue);
+}
+
+
+.sort-list {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+}
+
+.sort-item {
+  list-style: none;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+  color: var(--basic-black);
+}
+
+.sort-item:hover {
+  color: var(--basic-blue);
+}
+
+.arrow-down {
+  list-style: none;
+}
+
+.arrow-up {
+  list-style: none;
+}
+
+.hotels h2 {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.hotels-item {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.rate {
+  width: 110px;
+  height: 27px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: normal;
+  background-color: var(--special-grey-rate);
+}
+
+
+
