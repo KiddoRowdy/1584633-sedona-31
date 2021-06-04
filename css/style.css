@@ -67,7 +67,7 @@ a {
 
 }
 
-.features {
+.intro {
   width: 1200px;
   height: 509px;
   text-align: center;
@@ -93,7 +93,6 @@ a {
 
 .article {
   width: 400px;
-  height: 256px;
   font-size: 21px;
   font-weight: bold;
   line-height: 21px;
@@ -116,7 +115,6 @@ a {
 
 .about {
   width: 400px;
-  height: 256px;
   font-size: 21px;
   font-weight: bold;
   line-height: 21px;
@@ -126,7 +124,7 @@ a {
 
 }
 
-.book {
+.info {
   text-align: center;
   background-color: var(--basic-white);
   background-position: top center;
@@ -143,7 +141,7 @@ a {
   border: none;
 }
 
-.button-disabled {
+.button:disabled {
   color: var(--basic-brown);
 
 }
@@ -194,18 +192,18 @@ a {
   background-color: var(--special-brown-neutral);
 }
 
-.button-book {
+.button-info {
   font-weight: normal;
   color: var(--basic-white);
   background-color: var(--basic-brown);
 }
 
-.button-book:hover,
-.button-book:focus {
+.button-info:hover,
+.button-info:focus {
   background-color: var(--special-brown-light);
 }
 
-.button-book:active {
+.button-info:active {
   background-color: var(--special-brown-neutral);
 }
 
@@ -233,7 +231,8 @@ a {
 .main-footer {
   font-size: 21px;
   line-height: 26px;
-  background-image: url(/Users/borntosleep/Documents/GitHub/1584633-sedona-31/img/footer.png);
+  background-color: var(--basic-white);
+  opacity: 0.5;
 }
 .footer-social {
   list-style: none;
