@@ -72,14 +72,17 @@ a {
   height: 509px;
   text-align: center;
   background-color: var(--basic-grey);
-  background-image: url(/Users/borntosleep/Documents/GitHub/1584633-sedona-31/img/backgroundimage.jpg);
+  background-image: url(../img/intro-background.jpg);
   background-repeat: no-repeat;
   background-position: top center;
 }
 
+.info-headline {
+  text-align: center;
 
+}
 
-.slogan-item {
+.info-text {
   font-size: 14px;
   font-weight: normal;
   line-height: 24px;
@@ -91,7 +94,7 @@ a {
 }
 
 
-.article {
+.feature {
   width: 400px;
   font-size: 21px;
   font-weight: bold;
@@ -99,36 +102,57 @@ a {
   text-align: center;
   color: var(--basic-white);
   background-color: var(--basic-blue);
-
 }
 
-.article-list {
+.feature-number {
   font-size: 14px;
   font-weight: normal;
   line-height: 21px;
-
 }
 
-.article-img {
+.feature-text {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+}
+
+.feature-inner-text {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+}
+
+.feature-img {
   background-color: var(--special-grey);
 }
 
-.about {
+.feature-inner {
   width: 400px;
   font-size: 21px;
   font-weight: bold;
   line-height: 21px;
   text-align: center;
   color: var(--basic-black);
-  background-color: var(--special-grey);
+  ;
 
 }
 
-.info {
+.feature-background-grey {
+  color: var(--basic-black);
+  background-color: var(--special-grey);
+}
+
+.book {
   text-align: center;
   background-color: var(--basic-white);
   background-position: top center;
+}
 
+.book-text {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  text-align: center;
 }
  /* Buttons*/
 
@@ -207,7 +231,7 @@ a {
   background-color: var(--special-brown-neutral);
 }
 
-.button-htmlacademy {
+.link-htmlacademy {
   font-weight: normal;
   text-align: center;
   color: var(--basic-black);
@@ -217,12 +241,12 @@ a {
   border: none;
 }
 
-.button-htmlacademy:hover,
-.button-htmlacademy:focus {
+.link-htmlacademy:hover,
+.link-htmlacademy:focus {
   color: var(--special-blue-light)
 }
 
-.button-htmlacademy:active {
+.link-htmlacademy:active {
   color: var(--special-grey-htmlacademy);
 }
 

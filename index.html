@@ -4,8 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap">
-  <link href="normalize.css" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
 </head>
@@ -17,12 +18,12 @@
         <img src="img/logo.svg" alt="Logo Sedona" width="138" height="70" alt="Логотип город Седона">
       </a>
       <div class="main-navigation-wrapper">
-          <ul class="site-navigation">
-            <li><a href="blank.html">Информация</a></li>
-            <li><a href="blank.html">Фото и видео</a></li>
-            <li><a href="blank.html">Карта штата</a></li>
-            <li><a href="catalog.html">Гостиницы</a></li>
-          </ul>
+        <ul class="site-navigation">
+          <li><a href="blank.html">Информация</a></li>
+          <li><a href="blank.html">Фото и видео</a></li>
+          <li><a href="blank.html">Карта штата</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
+        </ul>
       </div>
     </nav>
   </header>
@@ -30,66 +31,61 @@
   <main class="container">
     <h1>Описание</h1>
     <section class="intro">
-      <img class="intro-img" src="img/index/welcome.svg" alt="Добро пожаловать в великолепную Седону" width="456" height="350">
+      <img class="intro-img" src="img/index/welcome.svg" alt="Добро пожаловать в великолепную Седону" width="456"
+        height="350">
     </section>
     <section class="info">
-      <h2 class="slogan">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-      <p class="slogan-item">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      <h2 class="info-headline">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+      <p class="info-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
     </section>
-    <div class="intro-columns">
-      <section class="article">
+    <div class="features">
+      <section class="feature">
         <h2>Настоящий городок</h2>
-        <p class="article-list">— №1 —</p>
-        <p class="article-list">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+        <p class="feature-number">— №1 —</p>
+        <p class="feature-text">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+        <img class="feature-img" src="img/index/hotel.jpg" alt="Настоящий городок" width="800" height="256">
       </section>
-      <section>
-        <img class="article-img" src="img/index/hotel.jpg" alt="Настоящий городок" width="800" height="256">
+      <section class="feature-inner">
+        <img src="img/icons/house.svg" alt="Домик" width="75" height="72">
+        <h2>Жильё</h2>
+        <p class="feature-inner-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
       </section>
-    </div>
-    <section class="about">
-      <img src="img/icons/house.svg" alt="Домик" width="75" height="72">
-      <h2>Жильё</h2>
-      <p class="article-list">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-    </section>
-    <section class="about">
-      <img src="img/icons/food.svg" alt="Бургер" width="75" height="72">
-      <h2>Еда</h2>
-      <p class="article-list">Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
-    </section>
-    <section class="about">
-      <img src="img/icons/gift.svg" alt="Подарок" width="75" height="72">
-      <h2>Сувениры</h2>
-      <p class="article-list">Не только китайского, но и местного производства</p>
-    </section>
-    <div class="index-columns">
-      <section class="about">
-        <img class="article-img" src="img/index/canyon.jpg" alt="Каньон" width="800" height="256">
+      <section class="feature-inner">
+        <img src="img/icons/food.svg" alt="Бургер" width="75" height="72">
+        <h2>Еда</h2>
+        <p class="feature-inner-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
       </section>
-      <section class="article article-background-blue">
+      <section class="feature-inner">
+        <img src="img/icons/gift.svg" alt="Подарок" width="75" height="72">
+        <h2>Сувениры</h2>
+        <p class="feature-inner-text">Не только китайского, но и местного производства</p>
+      </section>
+      <section class="feature">
+        <img class="feature-img" src="img/index/canyon.jpg" alt="Каньон" width="800" height="256">
         <h2>Там есть мост дьявола</h2>
-        <p class="article-list">— №2 —</p>
-        <p class="article-list">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        <p class="feature-number">— №2 —</p>
+        <p class="feature-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+      </section>
+      <section class="feature feature-background-grey">
+        <h2>Небольшая площадь</h2>
+        <p class="feature-number">— №3 —</p>
+        <p class="feature-text">Все достопримечательности нахоядтся очень близко</p>
+      </section>
+      <section class="feature feature-background-grey">
+        <h2>Красивая дорога</h2>
+        <p class="feature-number">— №4 —</p>
+        <p class="feature-text">ехать в седону из лас-вегаса совсем не скучно!</p>
+      </section>
+      <section class="feature feature-background-grey">
+        <h2>Мало туристов</h2>
+        <p class="feature-number">— №5 —</p>
+        <p class="feature-text">большинство едет в гранд каньон и толпится там</p>
       </section>
     </div>
-    <section class="about">
-      <h2>Небольшая площадь</h2>
-      <p class="article-list">— №3 —</p>
-      <p class="article-list">Все достопримечательности нахоядтся очень близко</p>
-    </section>
-    <section class="about">
-      <h2>Красивая дорога</h2>
-      <p class="article-list">— №4 —</p>
-      <p class="article-list">ехать в седону из лас-вегаса совсем не скучно!</p>
-    </section class="article">
-    <section class="about">
-      <h2>Мало туристов</h2>
-      <p class="article-list">— №5 —</p>
-      <p class="article-list">большинство едет в гранд каньон и толпится там</p>
-    </section>
-
-    <section class="info">
-      <h2 class="slogan">Заинтересовались?</h2>
-      <p class="slogan-item">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+    <section class="book">
+      <h2 class="book-headline">Заинтересовались?</h2>
+      <p class="book-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+      </p>
       <a class="button button-search" href="blank.html">Поиск Гостиницы в Седоне</a>
       <div>
 
@@ -107,22 +103,16 @@
         <li>
           <a class="social-button" href="#">Twitter</a>
         </li>
-      </ul>
-      <ul class="footer-social">
         <li>
           <a class="social-button" href="#">Facebook</a>
         </li>
-      </ul>
-      <ul class="footer-social">
         <li>
           <a class="social-button" href="#">Youtube</a>
         </li>
       </ul>
     </section>
     <section class="footer-copyright">
-      <p>
-        <a class="button-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">Website by .htmlacademy</a>
-      </p>
+      <a class="link-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">Website by .htmlacademy</a>
     </section>
   </footer>
 
