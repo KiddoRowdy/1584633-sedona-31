@@ -102,7 +102,9 @@ a {
   text-align: center;
   color: var(--basic-white);
   background-color: var(--basic-blue);
+
 }
+
 
 .feature-number {
   font-size: 14px;
@@ -281,7 +283,7 @@ a {
 
 .form {
   background-color: var(--basic-grey);
-  background-image: url(/Users/borntosleep/Documents/GitHub/1584633-sedona-31/img/catalog/backgroundcatalog.png);
+  background-image: url(../img/catalog/intro-backgroundcatalog.png);
   background-repeat: no-repeat;
   background-position: top center;
   color: var(--basic-white);
@@ -289,15 +291,17 @@ a {
 }
 
 
-.form-item {
+.form-headline {
   font-size: 16px;
   line-height: 21px;
 
 }
 
-.form-content {
+.form-list {
   font-size: 14px;
   line-height: 21px;
+  list-style: none;
+
 }
 
 .cost-content input {
@@ -311,13 +315,18 @@ a {
 }
 
 
-.sort-list {
+.sort-text {
   font-size: 12px;
   line-height: 18px;
   font-weight: normal;
 }
 
-.sort-item {
+.sort-list {
+  list-style: none;
+
+}
+
+.sort-link {
   list-style: none;
   font-size: 12px;
   line-height: 18px;
@@ -325,24 +334,26 @@ a {
   color: var(--basic-black);
 }
 
-.sort-item:hover {
+.sort-link:hover {
   color: var(--basic-blue);
 }
 
-.arrow-down {
+.sort-arrow {
   list-style: none;
 }
 
-.arrow-up {
-  list-style: none;
-}
-
-.hotels h2 {
+.hotel h2 {
   font-size: 21px;
   line-height: 26px;
 }
 
-.hotels-item {
+.hotel-text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.hotel-item {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
@@ -357,7 +368,7 @@ a {
   background-color: var(--special-grey-rate);
 }
 
-.this-page {
+.current-page {
   color: var(--basic-brown);
 
 }
