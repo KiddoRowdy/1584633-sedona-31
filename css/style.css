@@ -364,18 +364,24 @@ a {
   background-position: top center;
   color: var(--basic-white);
   font-weight: normal;
+  display: grid;
+  outline: 5px solid rgba(255, 0, 200, 0.712);
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1200px;
 }
 
 
 .form-headline {
   font-size: 16px;
   line-height: 21px;
+  grid-column: 2/4;
 }
 
 .form-list {
   font-size: 14px;
   line-height: 21px;
   list-style: none;
+  grid-column: 1/2;
 }
 
 .cost-content input {
@@ -388,6 +394,12 @@ a {
   border-color: var(--basic-blue);
 }
 
+.sort {
+  display: grid;
+  outline: 5px solid rgba(111, 0, 255, 0.918);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 86px;
+}
 
 .sort-text {
   font-size: 12px;
@@ -490,4 +502,21 @@ a {
   grid-row: 2/3;
 }
 
+.hotels {
+  display: grid;
+  outline: 5px solid rgba(0, 217, 255, 0.822);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
 
+.hotel-amara {
+  grid-row: 1/2;
+}
+
+.hotel-desert {
+  grid-row: 2/3;
+}
+
+.hotel-villas {
+  grid-row: 3/4;
+}
