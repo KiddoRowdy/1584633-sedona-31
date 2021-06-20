@@ -398,7 +398,7 @@ a {
   display: grid;
   outline: 5px solid rgba(111, 0, 255, 0.918);
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  height: 86px;
+
 }
 
 .sort-text {
@@ -509,14 +509,6 @@ a {
   grid-template-rows: 1fr 1fr 1fr;
 }
 
-.hotel-amara {
-  grid-row: 1/2;
-}
-
-.hotel-desert {
-  grid-row: 2/3;
-}
-
-.hotel-villas {
-  grid-row: 3/4;
+.hotel {
+  grid-column: 1/4;
 }
