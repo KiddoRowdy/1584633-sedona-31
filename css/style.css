@@ -268,10 +268,8 @@ a {
 .button-more {
   color: var(--basic-white);
   background-color: var(--basic-blue);
-  margin-bottom: 30px;
-  margin-left: 29px;
   margin-right: 6px;
-  margin-top: 15.5px;
+  height: 27px;
 }
 
 .button-more:hover,
@@ -303,9 +301,8 @@ a {
   font-weight: normal;
   color: var(--basic-white);
   background-color: var(--basic-brown);
-  margin-bottom: 7px;
-  margin-left: 6px;
-  margin-top: 23.5px;
+  margin-right: 6px;
+  height: 27px;
 }
 
 .button-book:hover,
@@ -468,11 +465,8 @@ a {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
-  margin-bottom: 18.5px;
-  margin-left: 29px;
-  margin-right: 9px;
-  margin-top: 7px;
-  padding: 0;
+  margin: 0px 9px 15px 0px;
+  grid-column: 1/2;
 }
 
 
@@ -480,11 +474,8 @@ a {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
-  margin-bottom: 15.5px;
-  margin-left: 9px;
-  margin-right: 583px;
-  margin-top: 7px;
-  width: 96px;
+  margin: 0px 0px 15px 0px;
+  grid-column: 2/3;
 }
 
 .rate {
@@ -559,26 +550,24 @@ a {
   align-items: center;
   min-height: 150px;
   margin-bottom: 30px;
-  margin-left: 73px;
-  margin-right: 73px;
+  padding-left: 73px;
+  padding-right: 73px;
+  padding-top: 30px;
 }
 
 .hotels h2 {
   margin-bottom: 7px;
-  margin-left: 29px;
-  margin-right: 561px;
   margin-top: 0;
 }
 
 .hotel-img {
   width: 135px;
   height: 90px;
-  margin-top: 30px;
+  margin-right: 29px;
 }
 
 .hotel-info {
   width: 809px;
-  margin-top: 30px;
 }
 
 .rating {
@@ -586,8 +575,8 @@ a {
 }
 
 .hotel-price-from {
-  display: flex;
-  width: 824px;
+  display: grid;
+  width: 258px;
 }
 
 
