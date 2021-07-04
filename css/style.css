@@ -95,16 +95,27 @@ a {
 
 .intro {
   width: 1200px;
-  height: 509px;
+  height: 503px;
   text-align: center;
   background-color: var(--basic-grey);
   background-image: url(../img/intro-background.jpg);
   background-repeat: no-repeat;
   background-position: top center;
+  position: relative;
 }
 
 .intro-img {
   margin-top: 76px;
+}
+
+.intro::after {
+  content: '';
+  background: url(../img/welcomebottom.svg) 0 0 no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 55px;
+  bottom: 0;
+  right: 0;
 }
 
 .info {
@@ -123,8 +134,8 @@ a {
   position: absolute;
   left: 531px;
   top: 0;
+  z-index: 1;
 }
-
 
 
 /* Main */
@@ -135,7 +146,7 @@ a {
   font-weight: bold;
   line-height: 26px;
   width: 470px;
-  margin: 0px 365px 16px 365px;
+  margin: 0 auto 45px;
 }
 
 .info-text {
@@ -180,8 +191,7 @@ a {
   line-height: 21px;
   color: var(--basic-black);
   text-align: center;
-  margin: 0;
-  margin-left: 77px;
+  margin: 0 auto;
   width: 246px;
 }
 
@@ -201,7 +211,6 @@ a {
   text-align: center;
   margin-top: 0;
   margin-bottom: 25px;
-
 }
 
 .feature-first-number {
@@ -212,7 +221,6 @@ a {
   text-align: center;
   margin-top: 0;
   margin-bottom: 23px;
-
 }
 
 .feature-first-text {
@@ -221,10 +229,8 @@ a {
   line-height: 21px;
   color: var(--basic-white);
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   width: 302px;
-  margin-left: 49px;
-
 }
 
 
@@ -264,8 +270,7 @@ a {
   line-height: 21px;
   color: var(--basic-white);
   text-align: center;
-  margin: 0;
-  margin-left: 50px;
+  margin: 0 auto;
   width: 301px;
 }
 
@@ -288,8 +293,7 @@ a {
   font-weight: bold;
   line-height: 21px;
   font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 25px;
+  margin: 0 auto 25px;
 }
 
 
@@ -297,8 +301,7 @@ a {
   font-size: 14px;
   font-weight: normal;
   line-height: 21px;
-  margin: 0;
-  margin-left: 51px;
+  margin: 0 auto;
   width: 297px;
 }
 
@@ -319,13 +322,12 @@ a {
   text-align: center;
   background-color: var(--basic-white);
   background-position: top center;
-  padding-top: 30px;
+  padding-top: 58px;
 }
 
 .book-headline {
   font-weight: bold;
-  margin: 0;
-  padding: 58px 457px 0px 446px;
+  margin: 0 auto 24px;
 
 }
 
@@ -334,8 +336,8 @@ a {
   font-weight: normal;
   line-height: 24px;
   text-align: center;
-  padding: 54px 382px 54px 382px;
-  margin: 0;
+  margin: 0 auto 24px;
+  width: 435px;
 }
 
 /* Buttons*/
@@ -392,6 +394,7 @@ a {
   color: var(--basic-white);
   background-color: var(--basic-brown);
   padding-top: 30px;
+  margin-top: 24px;
   font-weight: bold;
 }
 
@@ -498,7 +501,7 @@ a {
 }
 
 .map {
-  width: 1199px;
+  width: 1200px;
   height: 594px;
   background-image: url(../img/map.jpg);
 }
@@ -531,17 +534,34 @@ a {
   line-height: 21px;
   list-style: none;
   grid-column: 1/2;
+  padding: 0;
 }
 
 .form-fieldset {
-  margin: 0;
+  margin: 26px auto 32px;
   padding: 0;
   border: none;
 }
 
+.form-fieldset label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.form-input-checkbox + label::before {
+  content: '';
+  position: absolute;
+  left: -39px;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  border: 3px solid #FFFFFF;
+  border-radius: 2px;
+}
+
 .cost-content {
   display: flex;
-
 }
 
 .cost-content input {
@@ -708,8 +728,3 @@ a {
   display: grid;
   width: 258px;
 }
-
-
-
-
-
