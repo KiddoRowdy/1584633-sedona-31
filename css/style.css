@@ -436,12 +436,12 @@ a {
   fill: var(--basic-black);
 }
 
-.link-htmlacademy svg:hover,
-.link-htmlacademy svg:focus {
+.link-htmlacademy:hover svg,
+.link-htmlacademy:focus svg {
   fill: var(--special-blue-light);
 }
 
-.link-htmlacademy svg:active {
+.link-htmlacademy:active svg {
   fill: var(--special-grey-htmlacademy);
 }
 
@@ -691,13 +691,14 @@ a {
   box-sizing: border-box;
   justify-content: center;
   height: 36px;
+  position: relative;
 }
 
 .min-controls::after {
   content: '';
   position: absolute;
-  right: 152px;
-  top: 8px;
+  right: 0;
+  top: 5px;
   width: 2px;
   height: 22px;
   background-color: var(--special-grey-broder);
@@ -799,23 +800,23 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-left: 495px;
+  margin-left: 484px;
 }
 
 .sort-arrow svg {
   fill: var(--special-grey-arrow);
 }
 
-.sort-arrow-active {
+.sort-arrow {
   margin-left: 12px;
 }
 
-.sort-arrow svg:hover {
+.sort-arrow:hover svg {
   fill: var(--basic-black);
 }
 
-.sort-arrow svg:active,
-.sort-arrow svg:focus  {
+.sort-arrow:active svg,
+.sort-arrow:focus svg {
   fill: var(--basic-blue);
 }
 
@@ -840,23 +841,24 @@ a {
   margin-bottom: 45px
 }
 
-.star-1 {
+.star-4 {
   width: 75px;
 }
 
-.star-2 {
+.star-3 {
   width: 57px;
 }
 
-.star-3 {
+.star-2 {
   width: 37px;
 }
 
-.star-4 {
-
+.star-1 {
+ width: 18px;
 }
 
 .star-5 {
+  width: 95px;
 
 }
 
