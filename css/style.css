@@ -17,6 +17,7 @@
   --special-grey-toggle: #ABABAB;
   --special-grey-broder: #E5E5E5;
   --special-grey-arrow: #CACACA;
+  --special-grey-calendar: #A9A9A9;
 }
 
 /* Global */
@@ -985,4 +986,227 @@ a {
   grid-template-columns: 116px 1fr;
   width: 258px;
 }
+
+/*Modal*/
+
+.modal {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  min-width: 568px;
+  min-height: 395px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  background-color: var(--basic-white);
+  bottom: 199px;
+  right: 316px;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.modal input {
+  border: none;
+  background-color: var(--special-grey-rate);
+  height: 38px;
+}
+
+.login-form {
+  position: relative;
+  margin: 55px auto;
+}
+
+.appointment-item {
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+
+.appointment-item input {
+  width: 329px;
+  margin-left: 20px;
+  padding-left: 13px;
+  position: relative;
+}
+
+.appointment-icon {
+  width: 21px;
+  height: 23px;
+  border: none;
+  background-color: transparent;
+}
+
+.appointment-icon svg {
+  fill: var(--special-grey-calendar);
+  position: absolute;
+
+}
+
+.appointment-icon:focus svg,
+.appointment-icon:hover svg {
+  fill: var(--basic-black);
+  cursor: pointer;
+}
+
+.appointment-icon:active svg {
+  fill: var(--basic-blue);
+}
+
+.appointment-icon-in {
+  position: absolute;
+  top: -5px;
+  right: 20px;
+}
+
+.appointment-icon-out {
+  position: absolute;
+  top: 64px;
+  right: 20px;
+}
+
+
+.quantity {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+  margin: 0;
+}
+
+.quantity-adults {
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.quantity-adults input {
+  width: 114px;
+  margin-left: 40px;
+  text-align: center;
+}
+
+
+.quantity-children {
+  margin-left: 53px;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.quantity-children input {
+  width: 114px;
+  margin-left: 13px;
+  text-align: center;
+}
+
+.adults-minus {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  cursor: pointer;
+  top: 7px;
+  right: 85px;
+}
+
+.adults-minus svg {
+  fill: var(--special-grey-calendar);
+}
+
+.adults-minus:hover svg,
+.adults-minus:focus svg {
+  fill: var(--basic-black);
+  cursor: pointer;
+}
+
+.adults-minus:active svg {
+  fill: var(--basic-blue);
+}
+
+.adults-plus {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 10px;
+  right: 11px;
+}
+
+.adults-plus svg {
+  fill: var(--special-grey-calendar);
+}
+
+.adults-plus:hover svg,
+.adults-plus:focus svg {
+  fill: var(--basic-black);
+  cursor: pointer;
+}
+
+.adults-plus:active svg {
+  fill: var(--basic-blue);
+}
+
+.children-minus {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  cursor: pointer;
+  top: 7px;
+  right: 85px;
+}
+
+.children-minus svg {
+  fill: var(--special-grey-calendar);
+}
+
+.children-minus:hover svg,
+.children-minus:focus svg {
+  fill: var(--basic-black);
+  cursor: pointer;
+}
+
+.children-minus:active svg {
+  fill: var(--basic-blue);
+}
+
+.children-plus {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 10px;
+  right: 11px;
+}
+
+.children-plus svg {
+  fill: var(--special-grey-calendar);
+}
+
+.children-plus:hover svg,
+.children-plus:focus svg {
+  fill: var(--basic-black);
+  cursor: pointer;
+}
+
+.adults-plus:active svg {
+  fill: var(--basic-blue);
+}
+
+.button-modal {
+  width: 458px;
+  height: 56px;
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+  font-size: 21px;
+  font-weight: bold;
+  margin: 54px auto 0px;
+  cursor: pointer;
+}
+
+.button-modal:hover,
+.button-modal:focus {
+  background-color: var(--special-blue-light);
+}
+
+.button-modal:active {
+  background-color: var(--special-blue-neutral);
+}
+
 
