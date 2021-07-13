@@ -990,11 +990,9 @@ a {
 /*Modal*/
 
 .modal {
-  display: flex;
-  flex-direction: row;
+  display: none;
   box-sizing: border-box;
-  min-width: 568px;
-  min-height: 395px;
+  width: 568px;
   font-family: inherit;
   font-size: 14px;
   font-weight: bold;
@@ -1003,67 +1001,57 @@ a {
   bottom: 199px;
   right: 316px;
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  padding: 55px;
 }
 
-.modal input {
+.modal-show {
+  display: block;
+}
+
+.modal input[type=text] {
   border: none;
   background-color: var(--special-grey-rate);
   height: 38px;
 }
 
-.login-form {
-  position: relative;
-  margin: 55px auto;
-}
-
 .appointment-item {
   margin: 0;
   margin-bottom: 29px;
-}
-
-
-.appointment-item input {
-  width: 329px;
-  margin-left: 20px;
-  padding-left: 13px;
   position: relative;
 }
 
-.appointment-icon {
-  width: 21px;
-  height: 23px;
+.appointment-item input[type=text] {
+  width: 159px;
+  margin-left: 20px;
+  padding-left: 13px;
+  padding-right: 170px;
+}
+
+.appointment-button-in,
+.appointment-button-out {
   border: none;
   background-color: transparent;
-}
-
-.appointment-icon svg {
   fill: var(--special-grey-calendar);
   position: absolute;
-
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 100%;
 }
 
-.appointment-icon:focus svg,
-.appointment-icon:hover svg {
+
+.appointment-button-in:focus svg,
+.appointment-button-in:hover svg,
+.appointment-button-out:focus svg,
+.appointment-button-out:hover svg {
   fill: var(--basic-black);
   cursor: pointer;
 }
 
-.appointment-icon:active svg {
+.appointment-button-in:active svg,
+.appointment-button-out:active svg  {
   fill: var(--basic-blue);
 }
-
-.appointment-icon-in {
-  position: absolute;
-  top: -5px;
-  right: 20px;
-}
-
-.appointment-icon-out {
-  position: absolute;
-  top: 64px;
-  right: 20px;
-}
-
 
 .quantity {
   display: flex;
@@ -1073,119 +1061,72 @@ a {
   margin: 0;
 }
 
-.quantity-adults {
+.quantity-people {
   margin-top: 0;
   margin-bottom: 0;
   position: relative;
 }
 
-.quantity-adults input {
-  width: 114px;
-  margin-left: 40px;
+.quantity-people input[type=text] {
+  width: 34px;
+  margin-left: 39px;
   text-align: center;
+  padding-left: 39px;
+  padding-right: 39px;
 }
-
 
 .quantity-children {
-  margin-left: 53px;
-  margin-top: 0;
-  margin-bottom: 0;
-  position: relative;
+  margin-left: 65px;
 }
 
-.quantity-children input {
-  width: 114px;
+.quantity-children input[type=text]  {
   margin-left: 13px;
-  text-align: center;
 }
 
-.adults-minus {
+.quantity-people button {
   border: none;
   background-color: transparent;
   position: absolute;
   cursor: pointer;
-  top: 7px;
-  right: 85px;
+  height: 100%;
+  width: 40px;
 }
 
-.adults-minus svg {
+.quantity-minus {
+  bottom: 4px;
+  right: 71px;
+}
+
+.quantity-minus svg {
   fill: var(--special-grey-calendar);
 }
 
-.adults-minus:hover svg,
-.adults-minus:focus svg {
+.quantity-minus:hover svg,
+.quantity-minus:focus svg {
   fill: var(--basic-black);
   cursor: pointer;
 }
 
-.adults-minus:active svg {
+.quantity-minus:active svg {
   fill: var(--basic-blue);
 }
 
-.adults-plus {
-  border: none;
-  background-color: transparent;
-  position: absolute;
-  top: 10px;
-  right: 11px;
+.quantity-plus {
+  top: 0px;
+  right: 0px;
 }
 
-.adults-plus svg {
+.quantity-plus svg {
   fill: var(--special-grey-calendar);
 }
 
-.adults-plus:hover svg,
-.adults-plus:focus svg {
+.quantity-plus:hover svg,
+.quantity-plus:focus svg {
   fill: var(--basic-black);
   cursor: pointer;
 }
 
-.adults-plus:active svg {
-  fill: var(--basic-blue);
-}
-
-.children-minus {
-  border: none;
-  background-color: transparent;
-  position: absolute;
-  cursor: pointer;
-  top: 7px;
-  right: 85px;
-}
-
-.children-minus svg {
-  fill: var(--special-grey-calendar);
-}
-
-.children-minus:hover svg,
-.children-minus:focus svg {
-  fill: var(--basic-black);
-  cursor: pointer;
-}
-
-.children-minus:active svg {
-  fill: var(--basic-blue);
-}
-
-.children-plus {
-  border: none;
-  background-color: transparent;
-  position: absolute;
-  top: 10px;
-  right: 11px;
-}
-
-.children-plus svg {
-  fill: var(--special-grey-calendar);
-}
-
-.children-plus:hover svg,
-.children-plus:focus svg {
-  fill: var(--basic-black);
-  cursor: pointer;
-}
-
-.adults-plus:active svg {
+.quantity-plus:active svg {
   fill: var(--basic-blue);
 }
 
