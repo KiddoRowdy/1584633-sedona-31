@@ -114,7 +114,7 @@ a {
 }
 
 .intro::after {
-  content: '';
+  content: " ";
   background: url(../img/welcomebottom.svg) 0 0 no-repeat;
   position: absolute;
   width: 100%;
@@ -596,7 +596,7 @@ a {
 }
 
 .form-input-checkbox+label::before {
-  content: '';
+  content: " ";
   position: absolute;
   left: 0;
   top: -2px;
@@ -696,7 +696,7 @@ a {
 }
 
 .min-controls::after {
-  content: '';
+  content: " ";
   position: absolute;
   right: 0;
   top: 5px;
@@ -866,6 +866,7 @@ a {
 .hotel h2 {
   font-size: 21px;
   line-height: 26px;
+  color: var(--basic-black);
 }
 
 .hotel-text {
@@ -884,6 +885,21 @@ a {
   margin: 0px 0px 15px 0px;
   grid-column: 2/3;
 }
+
+.hotel-headline a {
+  color: var(--basic-black);
+}
+
+.hotel-headline a:hover {
+  color: var(--basic-blue);
+  cursor: pointer;
+}
+
+.hotel-headline a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
 
 .rate {
   width: 110px;
@@ -1027,8 +1043,7 @@ a {
   padding-right: 170px;
 }
 
-.appointment-button-in,
-.appointment-button-out {
+.appointment-button {
   border: none;
   background-color: transparent;
   fill: var(--special-grey-calendar);
@@ -1036,20 +1051,18 @@ a {
   top: 0;
   right: 0;
   width: 40px;
-  height: 100%;
+  height: 40px;
+  padding: 0;
 }
 
 
-.appointment-button-in:focus svg,
-.appointment-button-in:hover svg,
-.appointment-button-out:focus svg,
-.appointment-button-out:hover svg {
+.appointment-button:focus svg,
+.appointment-button:hover svg {
   fill: var(--basic-black);
   cursor: pointer;
 }
 
-.appointment-button-in:active svg,
-.appointment-button-out:active svg  {
+.appointment-button-in:active svg {
   fill: var(--basic-blue);
 }
 
@@ -1057,7 +1070,6 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 30px;
   margin: 0;
 }
 
@@ -1071,8 +1083,7 @@ a {
   width: 34px;
   margin-left: 39px;
   text-align: center;
-  padding-left: 39px;
-  padding-right: 39px;
+  padding: 0 39px 0 39px;
 }
 
 .quantity-children {
@@ -1083,32 +1094,23 @@ a {
   margin-left: 13px;
 }
 
-.quantity-people button {
+.quantity-common {
   border: none;
   background-color: transparent;
   position: absolute;
   cursor: pointer;
-  height: 100%;
+  height: 40px;
   width: 40px;
+  padding: 0;
 }
 
 .quantity-minus {
-  bottom: 4px;
-  right: 71px;
+  bottom: 0px;
+  right: 78px;
 }
 
 .quantity-minus svg {
-  fill: var(--special-grey-calendar);
-}
-
-.quantity-minus:hover svg,
-.quantity-minus:focus svg {
-  fill: var(--basic-black);
-  cursor: pointer;
-}
-
-.quantity-minus:active svg {
-  fill: var(--basic-blue);
+  position: absolute;
 }
 
 .quantity-plus {
@@ -1116,17 +1118,17 @@ a {
   right: 0px;
 }
 
-.quantity-plus svg {
+.quantity-common svg {
   fill: var(--special-grey-calendar);
 }
 
-.quantity-plus:hover svg,
-.quantity-plus:focus svg {
+.quantity-common:hover svg,
+.quantity-common:focus svg {
   fill: var(--basic-black);
   cursor: pointer;
 }
 
-.quantity-plus:active svg {
+.quantity-common:active svg {
   fill: var(--basic-blue);
 }
 
@@ -1139,6 +1141,7 @@ a {
   font-weight: bold;
   margin: 54px auto 0px;
   cursor: pointer;
+  padding: 0;
 }
 
 .button-modal:hover,
@@ -1148,6 +1151,7 @@ a {
 
 .button-modal:active {
   background-color: var(--special-blue-neutral);
+  color: ;
 }
 
 
