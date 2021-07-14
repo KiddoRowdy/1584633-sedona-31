@@ -174,7 +174,7 @@ a {
 
 .feature-headline {
   font-size: 21px;
-  line-height: 21px;
+  line-height: 22px;
   font-weight: bold;
   color: var(--basic-black);
   margin-top: 0;
@@ -195,7 +195,7 @@ a {
 .feature-text {
   font-size: 14px;
   font-weight: normal;
-  line-height: 21px;
+  line-height: 22px;
   color: var(--basic-black);
   text-align: center;
   margin: 0 auto;
@@ -256,7 +256,7 @@ a {
 .feature-second-headline {
   font-size: 21px;
   font-weight: bold;
-  line-height: 21px;
+  line-height: 22px;
   color: var(--basic-white);
   text-align: center;
   margin-top: 0;
@@ -269,7 +269,7 @@ a {
 .feature-second-number {
   font-size: 14px;
   font-weight: normal;
-  line-height: 21px;
+  line-height: 22px;
   color: var(--basic-white);
   text-align: center;
   margin-top: 0;
