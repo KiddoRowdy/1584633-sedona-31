@@ -556,7 +556,7 @@ a {
   color: var(--basic-white);
   font-weight: normal;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 300px 1fr 400px;
   width: 1200px;
   height: 217px;
 }
