@@ -119,13 +119,13 @@ a {
   background: url(../img/welcomebottom.svg) 0 0 no-repeat;
   position: absolute;
   width: 100%;
-  height: 55px;
+  height: 56px;
   bottom: 0;
   right: 0;
 }
 
 .info {
-  padding-top: 41px;
+  padding-top: 45px;
   padding-bottom: 51px;
 }
 
