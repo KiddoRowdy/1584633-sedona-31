@@ -179,6 +179,8 @@ a {
   color: var(--basic-black);
   margin-top: 0;
   margin-bottom: 25px;
+  margin-left: 140px;
+  width: 119px;
 }
 
 .feature-number {
@@ -216,6 +218,9 @@ a {
   text-align: center;
   margin-top: 0;
   margin-bottom: 25px;
+  margin-left: 139px;
+  width: 122px;
+
 }
 
 .feature-first-number {
@@ -256,6 +261,8 @@ a {
   text-align: center;
   margin-top: 0;
   margin-bottom: 25px;
+  margin-left: 126px;
+  width: 150px;
 }
 
 
@@ -614,6 +621,15 @@ a {
   background-image: url(../img/catalog/checked.svg);
 }
 
+.form-input-checkbox:disabled+label::before {
+  background-image: url(../img/catalog/checkbox-on-disabled.svg);
+}
+
+.form-input-checkbox:disabled+label::before {
+  background-image: url(../img/catalog/checkbox-disabled.svg);
+}
+
+
 .range-filter {
   width: 317px;
 
@@ -635,6 +651,12 @@ a {
   width: 80%;
   height: 2px;
   background-color: var(--basic-white);
+}
+
+.range-controls .toggle:hover {
+  border: 10px solid var(--basic-white);
+  background-color: var(--special-grey-toggle);
+  border-radius: 50%;
 }
 
 .range-controls .toggle {
@@ -1175,7 +1197,6 @@ a {
 
 .button-modal:active {
   background-color: var(--special-blue-neutral);
-  color: ;
 }
 
 
