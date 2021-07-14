@@ -18,6 +18,7 @@
   --special-grey-broder: #E5E5E5;
   --special-grey-arrow: #CACACA;
   --special-grey-calendar: #A9A9A9;
+  --special-grey-modal-input: #EBEBEB;
 }
 
 /* Global */
@@ -1014,21 +1015,18 @@ a {
   font-weight: bold;
   position: absolute;
   background-color: var(--basic-white);
-  bottom: 199px;
+  bottom: 203px;
   right: 316px;
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
-  padding: 55px;
+  padding: 52px;
 }
+
+
 
 .modal-show {
   display: block;
 }
 
-.modal input[type=text] {
-  border: none;
-  background-color: var(--special-grey-rate);
-  height: 38px;
-}
 
 .appointment-item {
   margin: 0;
@@ -1036,11 +1034,33 @@ a {
   position: relative;
 }
 
-.appointment-item input[type=text] {
-  width: 159px;
+.appointment-item-label {
+  width: 92px;
+}
+
+.appointment-date-input {
+  border: none;
+  background-color: var(--special-grey-rate);
+  height: 38px;
+  width: 160px;
   margin-left: 20px;
+  margin-right: 3px;
   padding-left: 13px;
   padding-right: 170px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.appointment-date-input:hover {
+  background-color: var(--special-grey-modal-input);
+  cursor: pointer;
+}
+
+.appointment-date-input:focus {
+  background-color: transparent;
+  border: 1px solid var(--special-grey-modal-input);
+
 }
 
 .appointment-button {
@@ -1049,7 +1069,7 @@ a {
   fill: var(--special-grey-calendar);
   position: absolute;
   top: 0;
-  right: 0;
+  right: 4px;
   width: 40px;
   height: 40px;
   padding: 0;
@@ -1062,7 +1082,7 @@ a {
   cursor: pointer;
 }
 
-.appointment-button-in:active svg {
+.appointment-button:active svg {
   fill: var(--basic-blue);
 }
 
@@ -1081,9 +1101,12 @@ a {
 
 .quantity-people input[type=text] {
   width: 34px;
+  height: 38px;
+  padding: 0 39px 0 39px;
   margin-left: 39px;
   text-align: center;
-  padding: 0 39px 0 39px;
+  border: none;
+  background-color: var(--special-grey-rate);
 }
 
 .quantity-children {
@@ -1094,23 +1117,24 @@ a {
   margin-left: 13px;
 }
 
-.quantity-common {
+.quantity-button {
   border: none;
   background-color: transparent;
   position: absolute;
   cursor: pointer;
-  height: 40px;
-  width: 40px;
+  height: 38px;
+  width: 34px;
   padding: 0;
 }
 
 .quantity-minus {
   bottom: 0px;
-  right: 78px;
+  right: 77px;
 }
 
 .quantity-minus svg {
-  position: absolute;
+  margin-left: 5px;
+  margin-bottom: 4px;
 }
 
 .quantity-plus {
@@ -1118,17 +1142,17 @@ a {
   right: 0px;
 }
 
-.quantity-common svg {
+.quantity-button svg {
   fill: var(--special-grey-calendar);
 }
 
-.quantity-common:hover svg,
-.quantity-common:focus svg {
+.quantity-button:hover svg,
+.quantity-button:focus svg {
   fill: var(--basic-black);
   cursor: pointer;
 }
 
-.quantity-common:active svg {
+.quantity-button:active svg {
   fill: var(--basic-blue);
 }
 
