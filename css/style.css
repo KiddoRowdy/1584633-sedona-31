@@ -19,7 +19,6 @@
   --special-grey-arrow: #CACACA;
   --special-grey-calendar: #A9A9A9;
   --special-grey-modal-input: #EBEBEB;
-  --special-grey-background: #888888;
 }
 
 /* Global */
@@ -34,7 +33,7 @@ body {
   font-weight: bold;
   color: var(--basic-black);
   text-transform: uppercase;
-  background-color: var(--special-grey-background);
+  background-color: var(--special-grey-rate);
 }
 
 a {
