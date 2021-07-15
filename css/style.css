@@ -616,22 +616,21 @@ a {
 }
 
 
-.form-input-checkbox:checked+label::before {
+.form-input-checkbox:checked + label::before {
   background-image: url(../img/catalog/checked.svg);
 }
 
-.form-input-checkbox:disabled+label::before {
+.form-input-checkbox:disabled + label::before {
   background-image: url(../img/catalog/checkbox-on-disabled.svg);
 }
 
-.form-input-checkbox:disabled+label::before {
+.form-input-checkbox:disabled + label::before {
   background-image: url(../img/catalog/checkbox-disabled.svg);
 }
 
 
 .range-filter {
   width: 317px;
-
 }
 
 .range-controls {
@@ -801,9 +800,10 @@ a {
 }
 
 .sort-link:active,
-.sort-link:focus  {
+.sort-link:focus {
   color: var(--basic-black);
 }
+
 .sort-link-active {
   color: var(--basic-blue);
   border: none;
@@ -877,7 +877,7 @@ a {
 }
 
 .star-1 {
- width: 18px;
+  width: 18px;
 }
 
 .star-5 {
@@ -944,6 +944,7 @@ a {
   min-height: 100vh;
   display: grid;
   grid-template-columns: min-content 1fr min-content;
+  grid-template-rows: min-content 1fr min-content;
   align-content: start;
   width: 1200px;
   justify-self: center;
@@ -1134,7 +1135,7 @@ a {
   margin-left: 65px;
 }
 
-.quantity-children input[type=text]  {
+.quantity-children input[type=text] {
   margin-left: 13px;
 }
 
@@ -1197,5 +1198,3 @@ a {
 .button-modal:active {
   background-color: var(--special-blue-neutral);
 }
-
-
