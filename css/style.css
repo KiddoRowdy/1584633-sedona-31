@@ -681,9 +681,8 @@ a {
 }
 
 .form-input-checkbox:focus + label::before {
-  background-image: url(../img/catalog/checkbox-off.svg);
+  border: 1px solid transparent;
 }
-
 
 .range-filter {
   width: 317px;
@@ -1134,10 +1133,10 @@ a {
   cursor: pointer;
 }
 
+.appointment-date-input:active,
 .appointment-date-input:focus {
   background-color: transparent;
-  border: 1px solid var(--special-grey-modal-input);
-
+  border: 0px solid var(--special-grey-modal-input);
 }
 
 .appointment-button {
