@@ -71,8 +71,7 @@ a {
 .site-navigation {
   list-style: none;
   margin: 0;
-  padding: 0;
-  padding-bottom: 15px;
+  padding: 0 72px 15px 72px ;
   display: flex;
   flex-wrap: wrap;
   width: 1200px;
@@ -84,22 +83,31 @@ a {
 
 .site-navigation a {
   display: block;
-  text-align: center;
+  text-align: left;
   color: var(--basic-black);
-  width: 100px;
-  margin-left: 73px;
 }
 
 .site-navigation li {
-  width: 20%;
+  width: 19%;
   padding-top: 15px;
 }
 
-.site-navigation li:nth-child(3) {
-  margin-left: 20%;
+.site-navigation li:first-child {
+  width: 228px;
 }
 
+.site-navigation li:nth-child(3) {
+  margin-left: 30%;
+  width: 100px;
+}
 
+.site-navigation li:last-child {
+  width: 210px;
+}
+
+.site-navigation li:last-child a {
+  text-align: right;
+}
 
 .intro {
   width: 1200px;
@@ -375,7 +383,7 @@ a {
 }
 
 .button-form {
-  width: 137px;
+  min-width: 137px;
   height: 36px;
   font-size: 14px;
   line-height: 21px;
@@ -393,11 +401,13 @@ a {
 
 .button-more {
   font-size: 14px;
+  font-weight: bold;
   color: var(--basic-white);
   background-color: var(--basic-blue);
   height: 24px;
-  width: 110px;
-  padding-top: 3px;
+  min-width: 110px;
+  padding-top: 4px;
+  margin-right: 6px;
 }
 
 .button-more:hover,
@@ -410,7 +420,7 @@ a {
 }
 
 .button-search {
-  width: 568px;
+  min-width: 568px;
   height: 53px;
   color: var(--basic-white);
   background-color: var(--basic-brown);
@@ -430,11 +440,11 @@ a {
 
 .button-book {
   font-size: 14px;
-  font-weight: normal;
+  font-weight: bold;
   color: var(--basic-white);
   background-color: var(--basic-brown);
   height: 24px;
-  padding-top: 3px;
+  padding-top: 4px;
 }
 
 .button-book:hover,
@@ -442,7 +452,7 @@ a {
   background-color: var(--special-brown-light);
 }
 
-.button-info:active {
+.button-book:active {
   background-color: var(--special-brown-neutral);
 }
 
@@ -494,7 +504,8 @@ a {
   grid-template-columns: 400px 400px 400px;
   grid-row: 5/6;
   text-align: center;
-  padding-bottom: 28px;
+  padding-bottom: 37px;
+  padding-top: 24px;
 }
 
 .footer-contacts {
@@ -502,7 +513,7 @@ a {
 }
 
 .hashtag-visit-sedona {
-  margin: 25px 0 9px 0;
+  margin: 0px 0 9px 0;
 }
 
 .footer-phone {
@@ -518,8 +529,7 @@ a {
 .footer-social {
   width: 150px;
   text-align: center;
-  padding-top: 37px;
-  margin: 0 auto;
+  margin: 12px auto 0;
 }
 
 .footer-social ul {
@@ -534,13 +544,12 @@ a {
 
 .footer-copyright {
   height: 37px;
-  padding-top: 44px;
-  padding-bottom: 12px;
+  padding-top: 19px;
   margin: 0 auto 0 66px;
 }
 
 .social-button {
-  width: 46px;
+  min-width: 46px;
   height: 48px;
   color: var(--basic-black);
   background-color: var(--basic-blue);
@@ -552,6 +561,10 @@ a {
 .social-button:hover,
 .social-button:focus {
   background-color: var(--special-blue-light);
+}
+
+.social-button:active {
+  background-color: var(--special-blue-neutral);
 }
 
 .footer-phone {
@@ -582,7 +595,7 @@ a {
   display: grid;
   grid-template-columns: 325px 1fr 400px;
   width: 1200px;
-  height: 217px;
+  min-height: 217px;
 }
 
 .form-headline {
@@ -666,6 +679,11 @@ a {
 .form-input-checkbox:disabled + label::before {
   background-image: url(../img/catalog/checkbox-disabled.svg);
 }
+
+.form-input-checkbox:focus + label::before {
+  background-image: url(../img/catalog/checkbox-off.svg);
+}
+
 
 .range-filter {
   width: 317px;
@@ -1077,7 +1095,7 @@ a {
   bottom: 202px;
   right: 314px;
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
-  padding: 52px;
+  padding: 51px;
 }
 
 
@@ -1129,7 +1147,7 @@ a {
   position: absolute;
   top: 0;
   right: 4px;
-  width: 40px;
+  min-width: 40px;
   height: 40px;
   padding: 0;
 }
@@ -1182,7 +1200,7 @@ a {
   position: absolute;
   cursor: pointer;
   height: 38px;
-  width: 34px;
+  min-width: 34px;
   padding: 0;
 }
 
@@ -1216,7 +1234,7 @@ a {
 }
 
 .button-modal {
-  width: 458px;
+  min-width: 458px;
   height: 57px;
   color: var(--basic-white);
   background-color: var(--basic-blue);
