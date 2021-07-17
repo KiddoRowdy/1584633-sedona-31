@@ -105,6 +105,17 @@ a {
   text-align: right;
 }
 
+.nav-active:hover {
+  color: var(--basic-blue);
+}
+
+.nav-active:active {
+  opacity: 0.3;
+}
+
+.nav-active:focus {
+ color: var(--basic-brown);
+}
 
 
 .intro {
